@@ -1,0 +1,298 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 18px;
+}
+:root{
+    /* colors */
+--Light-red: hsl(0, 100%, 67%);
+ --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+   --Cobalt-blue: hsl(234, 85%, 45%);
+   /* gradients */
+--Light-slate-blue : hsl(252, 100%, 67%);
+ --Light-royal-blue : hsl(241, 81%, 54%);
+   --Violet-blue : hsla(256, 72%, 46%, 1);
+   --Persian-blue : hsla(241, 72%, 46%, 0);
+/* neutral */
+--White: hsl(0, 0%, 100%);
+ --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+   --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+  
+
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--White);
+}
+.left-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:25.5%;
+    height: 77%;
+    background: linear-gradient(to bottom, hsl(252, 96%, 63%), hsl(241, 81%, 54%));
+    border-radius: 1.5rem;
+    border:2px solid var(--Light-slate-blue);
+}
+.right-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 25.5%;
+    height: 77%;
+    background-color:var(--White);
+    border-top-right-radius:1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow:10px 15px 20px 0px var(--Pale-blue);
+}
+/* left container */
+.result{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+    margin-top:-.5rem;
+    margin-bottom:-0.5rem;
+}
+.circle{
+    height:39.5%;
+    border-radius:50%;
+    width:55%;
+    background: linear-gradient(to top, #4835f1,#4b23ca),
+    radial-gradient(circle at bottom, rgba(75, 35, 202, 0.8) 30%, rgba(75, 35, 202, 0.5) 60%, rgba(75, 35, 202, 0) 80%);
+    text-align: center;
+    margin-bottom: -1rem;
+   
+    }
+.number{
+margin-top:2.3rem;
+font-size: 4rem;
+color: var(--White);
+font-weight:900;
+margin-bottom: -.5rem;
+}
+.under-number{
+    color: #8577fb;
+}
+.great{
+    font-size: 1.8rem;
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: -1.5rem;
+}
+.below-great{
+    text-align: center;
+    color:var(--Light-lavender);
+    margin-bottom: 1rem;
+}
+/* end of left container */
+/* right container */
+.summary{
+font-size: 1.3rem;
+font-weight: bolder;
+margin-right:auto;
+margin-left: 2rem;
+margin-top: 0.3rem;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 11%;
+    border-radius: 0.5rem;
+    margin-bottom: -1.2rem;
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%,5%);
+    border-radius: 0.5rem;
+}
+.memory{
+    background-color:hsla(39, 100%, 56%,5%);
+    border-radius: 0.5rem;
+}
+.verbal{
+    background-color:hsla(166, 100%, 37%,5%);
+    border-radius: 0.5rem;
+}
+.visual{
+    background-color:hsla(234, 85%, 45%,5%);
+    border-radius: 0.5rem;
+}
+.button{
+    width: 80%;
+    height: 11%;
+    margin-top:1.5rem;
+    margin-bottom: 1rem;
+}
+button{
+    width:100%;
+    height:100%;
+    background-color: var(--Dark-gray-blue);
+    font-size:1rem;
+    color:white;
+    border-radius: 2rem;
+}
+img{
+    margin-left:0.7rem;
+}
+.reaction-span,
+.memo-span,
+.verbal-span,
+.visual-span{
+    margin-right: auto;
+    margin-left: 0.5rem;
+}
+.reaction-span{
+    color:var(--Light-red);
+}
+.memo-span{
+    color:var(--Orangey-yellow);
+}
+.verbal-span{
+    color:var(--Green-teal);
+}
+.visual-span{
+    color:var(--Cobalt-blue);
+}
+.first-number{
+margin-right: 0.5rem;
+}
+.second-number{
+    margin-right:1rem;
+    color:#9aa3aa;
+}
+button:hover{
+    background: linear-gradient(to bottom, hsl(252, 96%, 63%), hsl(241, 81%, 54%));
+}
+/* end of right container*/
+
+
+/* mobile-or smaller devices */
+@media (max-width:1030px) {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--White);
+    height:100%;
+}
+.left-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:50vh;
+    background: linear-gradient(to bottom, hsl(252, 96%, 63%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border: 2px solid var(--Light-slate-blue);
+}
+
+.right-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    background-color: var(--White);
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 10px 15px 20px 0px var(--Pale-blue);
+}
+/* top container */
+.result {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Light-lavender);
+    margin-top:0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.circle {
+    height:40%;
+    width:40%;
+    border-radius:50%;
+    background: linear-gradient(to top, #4835f1, #4b23ca),
+        radial-gradient(circle at bottom, rgba(75, 35, 202, 0.8) 30%, rgba(75, 35, 202, 0.5) 60%, rgba(75, 35, 202, 0) 80%);
+    text-align: center;
+    margin-bottom:0.5rem;
+}
+
+.number {
+    margin-top:1.5rem;
+    font-size: 2.5rem;
+    color: var(--White);
+    font-weight: 900;
+    margin-bottom: -.5rem;
+}
+
+.under-number {
+    color: #8577fb;
+    font-size: 0.8rem;
+}
+
+.great {
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.below-great {
+    text-align: center;
+    color: var(--Light-lavender);
+    font-size: 0.8rem;
+}
+/* bottom- container */
+.summary {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 80%;
+    height: 11%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding:1rem;
+}
+.button {
+    margin-top:0.5rem; 
+} 
+
+button {
+    padding:1rem;
+}
+
+}
