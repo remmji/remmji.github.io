@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<!-- logo & hamburger -->
+  <div class="logo-container">
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <div class="container-btn" id="hamburger">
+      <div class="bar1" id="bar1"></div>
+      <div class="bar2" id="bar2"></div>
+      <div class="bar3" id="bar3"></div>
+    </div>
+  </div>
+  <!-- logo & hamburger end -->
+  <!-- start navbar -->
+<nav class="navbar" id="navbar">
+  <div class="left-side-nav">
+   
+    <button class="nav-links-btn" id="featureBtn">Features</button>
+    <div class="dropdown" id="dropdown1">
+      <div class="nav-icons">
+        <img src="images/icon-todo.svg" alt="todo">
+        <img src="images/icon-calendar.svg" alt="calendar">
+        <img src="images/icon-reminders.svg" alt="reminder">
+        <img src="images/icon-planning.svg" alt="planning">
+      </div>
+      <div class="icons-links">
+        <div class="todo">
+          <a href="" class='drop-links'>Todo List</a>
+        </div>
+        <div class="calendar">
+          <a href="" class='drop-links'>Calendar<a>
+        </div>
+        <div class="reminders">
+          <a href="" class='drop-links'>Reminders</a>
+        </div>
+        <div class="planning">
+          <a href="" class='drop-links'>Planning</a>
+        </div>
+      </div>
+    </div>
+    <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img" id="ar1"></div>
+    <button class="nav-links-btn"id='companyBtn'>Company</button>
+    <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img" id="ar2"></div>
+    <div class="dropdown2" id="dropdown2">
+      <div><a href="" class='drop-links'>History</a></div>
+      <div><a href="" class='drop-links'>Our Team</a></div>
+      <div><a href="" class='drop-links'>Blog</a></div>
+    </div>
+    <!-- <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow-img" id="ar2"></div> -->
+    <!--end drop2 -->
+    <a href=""class="nav-links">Careers</a>
+    <a href=""class="nav-links">About</a>
+  </div>
+  <div class="right-side-nav">
+    <a href="" class="nav-links" id="login">Login</a>
+    <div class="reg-btn-container">
+      <button class="register-btn">Register</button>
+    </div>
+  </div>
+</nav>
+ <!-- End navbar -->
+ <!-- hero -->
+  <main class="main">
+    <div class="left-content">
+      <div class="header-container">
+        <h1 class="header">Make remote work</h1>
+      </div>
+      <div class="p-box"><p class="info">Get your team in sync,no matter your location. Streamline processes,create team rituals, and watch productivity soar.</p></div>
+      <button class="learn-more">Learn more</button>
+      <div class="icon-container">
+        <img src="images/client-databiz.svg" alt="databiz"class='icon'>
+        <img src="images/client-audiophile.svg" alt="audiophile"class='icon'>
+        <img src="images/client-meet.svg" alt="meet"class='icon'>
+        <img src="images/client-maker.svg" alt="maker"class='icon'>
+      </div>
+    </div>
+    <div class="right-content">
+    <img src="images/image-hero-desktop.png"
+       srcset="images/image-hero-mobile.png 750w,
+               images/image-hero-desktop.png 960w" 
+       sizes="(max-width: 1960px) 100vw, 50vw"
+       
+         alt="hero-image" class="hero">
+    </div>
+  </main>
+  <!-- hero end -->
+</body>
+</html>
