@@ -11,7 +11,7 @@
     --less-dark-violet: hsl(278, 58%, 26%);
     }
 
-@media screen and (min-width: 1370px){
+@media screen and (min-width: 1377px){
 body{
 font-family: 'Space Grotesk', sans-serif;
 background-color: var(--White);
@@ -200,7 +200,7 @@ span{
 }
 
 }
-@media screen and (min-width: 375px)and (max-width: 1369px){
+@media screen and (max-width: 1376px) {
 body {
         font-family: 'Space Grotesk', sans-serif;
         background-color: var(--White);

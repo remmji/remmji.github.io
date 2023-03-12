@@ -16,8 +16,8 @@ const continueBtn = document.querySelector('.continue');
 const imgMain = document.querySelector('#imgMain');
 const imgMobile = 'images/bg-main-mobile.png';
 const imgDesktop = 'images/bg-main-desktop.png';
-const mediaQuery = window.matchMedia("(min-width:320px)");
-const mediaQueryDesktop = window.matchMedia("(min-width:1370px)");
+const mediaQuery = window.matchMedia("(max-width:1376px)");
+const mediaQueryDesktop = window.matchMedia("(min-width:1377px)");
 
 function updateImage(){
     if (mediaQuery.matches){
