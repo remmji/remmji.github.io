@@ -12,3 +12,6 @@ https://remmji.github.io/results-summary-component-main/index.html
 
 5.Intro section with dropdown navbar
 https://remmji.github.io/intro-section-with-dropdown-navigation-main/index.html
+
+6.Testimonials grid-section
+https://remmji.github.io/testimonials-grid-section-main/index.html
