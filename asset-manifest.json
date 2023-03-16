@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.191eaeda.css",
+    "main.css": "/static/css/main.f6418b51.css",
     "main.js": "/static/js/main.223656a3.js",
     "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/static/media/icon-close.d47fda63cbd8b3fedbbc.svg",
     "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.5273efa7c50e96ef3e51.svg",
-    "main.191eaeda.css.map": "/static/css/main.191eaeda.css.map",
+    "main.f6418b51.css.map": "/static/css/main.f6418b51.css.map",
     "main.223656a3.js.map": "/static/js/main.223656a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.191eaeda.css",
+    "static/css/main.f6418b51.css",
     "static/js/main.223656a3.js"
   ]
 }
