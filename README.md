@@ -1,12 +1,5 @@
-1.QR Code
+1 .SPACE TOURISM WEBSITE--(React)  -  https://remmji.github.io/
 
-2.Home News Page media 1440px for desktop and 375px for mobile
+2.Intro section with dropdown navbar -  https://remmji-github-io.vercel.app/
 
-3.Interactive Card Details Component
-
-4.Results summary component
-
-5.Intro section with dropdown navbar
-
-6.Testimonials grid-section
-
+3.Interactive Card Details Component  -  https://remmji-github-io-cuhq.vercel.app/
