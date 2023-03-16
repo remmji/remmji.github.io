@@ -1,7 +1,7 @@
 { 
   "name": "space-tourism-app",
   "version": "0.1.0",
-  "homepage":"https://remmji.github.io/space-tourism-website-main/space-tourism-app",
+  "homepage":"https://remmji.github.io/space-tourism-website-main/space-tourism-app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
