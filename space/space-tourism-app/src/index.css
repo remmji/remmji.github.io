@@ -123,6 +123,7 @@ nav{
 }
 .main-navigation{
   display:flex;
+  height:5rem;
   gap:clamp(1.5rem,5vw,3rem);
   margin-right:2rem;
   list-style: none;
@@ -188,7 +189,6 @@ nav{
 .home-paragraph{
   line-height:1.7;
 }
-
 /* destination */
 
 .destination-contener{
@@ -232,6 +232,9 @@ nav{
   margin-left:4.5em;
   margin-top:2em;
   margin-bottom:2em;
+}
+.tabs{
+  height:2em;
 }
 .tab-btn{
   background: none;
