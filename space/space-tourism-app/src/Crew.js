@@ -27,7 +27,7 @@ function Crew() {
                 <h4 className="role uppercase grey">{person.role}</h4>
                 <h3 className="name uppercase">{person.name}</h3>
                 <p className="bio">{person.bio}</p>
-                <div className="slider">
+            <div className="slider">
                 <button className="slider-btn"
                 onClick={()=>setPerson(commander)} ></button>
                 <button className='slider-btn'
