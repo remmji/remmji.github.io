@@ -279,27 +279,31 @@ nav{
   display:grid;
   grid-template-areas: 'one two';
   grid-template-columns: 0.8fr 1fr;
-  place-items: center;
+  grid-template-rows: 1fr;
+  /* place-items: center; */
 }
 .destination-header-crew {
   margin-left: 4.5em;
   margin-top: 2em;
 }
 .crew-left-column{
-  margin-left: 7em;
+  margin-left: 12vw;
   grid-area: one;
   display: flex;
   flex-direction: column;
+  padding-block:7rem;
   gap:1em;
 }
 .crew-right-column{
   grid-area: two;
+  text-align: center;
 }
 .bio{
   width:85%;
 }
 .slider{
- margin-top:2em;
+ position: absolute;
+ bottom:10%;
 }
 .slider-btn{
   width:1rem;
@@ -713,9 +717,8 @@ nav{
           font-weight: 400;
           font-size: 1.2rem;
           border:none;
-          margin-bottom:10rem;
+          margin-bottom:8rem;
           margin-top:0rem;
-
         }
         h1{
           font-size:70px
@@ -724,7 +727,7 @@ nav{
           font-size: 14px;
         }
         p{
-          font-size: 15px;
+          font-size: 14px;
           line-height: 1.5;
         }
             /* destination */

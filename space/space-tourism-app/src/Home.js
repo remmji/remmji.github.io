@@ -37,8 +37,8 @@ function Home() {
         <div className="home-text">
             <motion.h5><TypingText/></motion.h5>
             <motion.h1
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration:3, delay:3}}
             >SPACE</motion.h1>
             <motion.p
