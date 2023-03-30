@@ -42,14 +42,18 @@ function Crew() {
                 animate={{ x:0, opacity:1 }}
                 transition={{ duration:0.6, delay:1.6 }}>{person.bio}</motion.p>
             <div className="slider">
-                <button className="slider-btn"
-                onClick={()=>setPerson(commander)} ></button>
-                <button className='slider-btn'
-                onClick={()=>setPerson(specialist)} ></button>
-                <button className='slider-btn'
-                onClick={()=>setPerson(pilot)} ></button>
-                <button className='slider-btn'
-                onClick={()=>setPerson(engineer)} ></button>
+                <motion.button className="slider-btn"
+                onClick={()=>setPerson(commander)} whileHover={{scale: 1.2}}
+                    whileTap={{scale: 0.8}}></motion.button>
+                <motion.button className='slider-btn'
+                onClick={()=>setPerson(specialist)} whileHover={{scale: 1.2}}
+                    whileTap={{scale: 0.8}}></motion.button>
+                <motion.button className='slider-btn'
+                onClick={()=>setPerson(pilot)} whileHover={{scale: 1.2}}
+                    whileTap={{scale: 0.8}}></motion.button>
+                <motion.button className='slider-btn'
+                onClick={()=>setPerson(engineer)} whileHover={{scale: 1.2}}
+                    whileTap={{scale: 0.8}}></motion.button>
             </div>
             </div>
 

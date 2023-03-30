@@ -3,6 +3,8 @@ import Navbar from './Navbar';
 import data from './data.json'
 import { useState,useEffect } from 'react';
 import PageTransition from './PageTransition';
+import { motion } from 'framer-motion';
+
 
 function Technology() {
     
@@ -48,28 +50,48 @@ const handleButtonClick = (selectedMachine) => {
         <main className="technology-grid">
             <div className="technology-text-container">
                 <div className="btns-flex-container">
-                    <button className="tech-btn"
-                    onClick={()=>handleButtonClick(vehicle)}>
+                    <motion.button className="tech-btn"
+                    onClick={()=>handleButtonClick(vehicle)}
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.8}}>
                         1
-                    </button>
-                    <button className="tech-btn"
-                    onClick={()=>handleButtonClick(spaceport)}>
+                    </motion.button>
+                    <motion.button className="tech-btn"
+                    onClick={()=>handleButtonClick(spaceport)}
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.8}}>
                         2
-                    </button>
-                    <button className="tech-btn"
-                    onClick={()=>handleButtonClick(capsule)}>
+                    </motion.button>
+                    <motion.button className="tech-btn"
+                    onClick={()=>handleButtonClick(capsule)}whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.8}}>
                         3
-                    </button>
+                    </motion.button>
                 </div>
                 <div className="tech-content-text">
                     <h5 className="top-text">THE TERMINOLOGY...</h5>
-                    <h3 className="vehicle-name uppercase">{machine.name}</h3>
-                    <p className="tech-para">{machine.description}</p>
+                    <motion.h3 className="vehicle-name uppercase"
+                    key={machine.name}
+                    initial={{ x:500, opacity:0 }}
+                    animate={{ x:0, opacity:1 }}
+                    transition={{ duration:0.6, delay:0.6 }}>{machine.name}
+                    </motion.h3>
+
+                    <motion.p className="tech-para"
+                    key={machine.description}
+                    initial={{ x:500, opacity:0 }}
+                    animate={{ x:0, opacity:1 }}
+                    transition={{ duration:0.6, delay:1 }}>{machine.description}
+                    </motion.p>
                 </div>
             </div>
 
             <div className="technology-image-container">
-                <img src={image} alt={machine.name} className='machine-image'/>
+                <motion.img src={image} alt={machine.name} className='machine-image'
+                 key={image}
+                 initial={{ x:500, opacity:0 }}
+                 animate={{ x:0, opacity:1 }}
+                 transition={{ duration:0.6, delay:0.6 }}/>
             </div>
 
         </main>
