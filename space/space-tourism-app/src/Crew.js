@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar';
 import data from './data.json'
 import { useState } from 'react';
+import PageTransition from './PageTransition';
 
 
 function Crew() {
@@ -13,6 +14,7 @@ function Crew() {
     const [person,setPerson] = useState(commander);
 
   return (
+    <PageTransition>
     <div className='crew-container'>
          <Navbar/>
 
@@ -50,6 +52,7 @@ function Crew() {
 
 
     </div>
+    </PageTransition>
   )
 }
 

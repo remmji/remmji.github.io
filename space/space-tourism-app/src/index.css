@@ -187,7 +187,7 @@ nav{
   border-bottom: 0.2rem solid hsl(0, 0%, 75%);
 }
 .home-paragraph{
-  line-height:1.7;
+  line-height:1.5;
 }
 /* destination */
 
@@ -196,6 +196,7 @@ nav{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-bottom:5vw;
 }
 .destination-header-numbers{
   color: hsl(0, 0%, 60%);
@@ -204,7 +205,8 @@ nav{
 .destination-main{
   display:grid;
   grid-template-areas:'one two';
-  grid-template-columns: 50% 37vw;
+  grid-template-columns: 50% 38vw;
+  grid-template-rows: 1fr;
   place-items: center;
   margin-top:6em;
   padding-bottom:2em;
@@ -213,11 +215,17 @@ nav{
   grid-area:one;
 }
 .planet-image{
-  margin-left:5em;
+  margin-left:8vw;
+  width:70%;
 }
 .planet-description,
 .bio{
-  line-height: 1.5;
+  line-height: 1.4;
+  padding-block:0.2rem;
+}
+.planet-description{
+  height:120px;
+  font-size:1.25vw;
 }
 .grey{
  color: hsl(0, 0%, 60%);
@@ -226,8 +234,9 @@ nav{
   grid-area: two;
   display: flex;
   flex-direction: column;
-  gap:2em;
-  margin-left:5em;
+  gap:1.2em;
+  margin-left:4em;
+  padding-block: 0.5rem;
 }
 .destination-header{
   margin-left:4.5em;
@@ -236,6 +245,7 @@ nav{
 }
 .tabs{
   height:2em;
+  padding-block: 0.2rem;
 }
 .tab-btn{
   background: none;
@@ -243,14 +253,18 @@ nav{
   color:var(--lavender);
   padding-inline:1em;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 16px;
+  font-size: 1.2vw;
   letter-spacing: 2.7px;
   font-weight: 500;
 }
 .big-numbers-container{
   display:flex;
   gap:4em;
-  margin-top:1.5em;
+  margin-top:1vw;
+  padding-block: 0.5rem;
+}
+.subheading{
+  font-size: 2vw;
 }
 /* destination END */
 
@@ -449,6 +463,10 @@ nav{
 .bio{
   line-height: 1.5;
 }
+.planet-description{
+  height: 100px;
+  font-size:16px;
+}
 .grey{
  color: hsl(0, 0%, 60%);
 }
@@ -481,6 +499,9 @@ nav{
   display:flex;
   gap:4em;
   margin-top:1.5em;
+}
+.subheading {
+  font-size: 3vw;
 }
 /* CREW */
 .crew-container {
@@ -625,7 +646,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding: min(30vh, 9rem) 2em;
-    gap:3em;
+    gap:2em;
     transform: translate(120%);
     transition: transform 300ms ease-out;
     z-index: 100;
@@ -655,7 +676,9 @@ nav{
     background-image: url('./assets/home/background-home-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    }
+    li{
+      height:9vw;
     }
         .home-content {
           display: flex;
@@ -721,13 +744,15 @@ nav{
         'one'
         'two';
   grid-template-columns: 1fr;
-  grid-template-rows:0.25fr 1fr;
+  grid-template-rows:min-content min-content;
   place-items:start center;
   margin-top:1.5em;
+  padding-block:2rem;
 }
 .planet{
   grid-area:one;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .planet-image{
   margin-left:0em;
@@ -737,7 +762,11 @@ nav{
 }
 .planet-description,
 .bio{
-  line-height: 1.5;
+  line-height: 1.4;
+}
+.planet-description{
+  height:70px;
+  font-size:14px;
 }
 .grey{
  color: hsl(0, 0%, 60%);
@@ -779,6 +808,9 @@ h2 {
   flex-direction: column;
   gap: 1em;
   margin-top:2em;
+}
+.subheading{
+  font-size:15px ;
 }
 /* CREW */
 .crew-container {

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar';
 import data from './data.json'
 import { useState,useEffect } from 'react';
+import PageTransition from './PageTransition';
 
 function Technology() {
     
@@ -36,6 +37,7 @@ const handleButtonClick = (selectedMachine) => {
 
 
   return (
+    <PageTransition>
     <div className="technology-container">
         <Navbar/>
          <h5 className="destination-header">
@@ -74,6 +76,7 @@ const handleButtonClick = (selectedMachine) => {
 
 
     </div>
+    </PageTransition>
   )
 }
 
