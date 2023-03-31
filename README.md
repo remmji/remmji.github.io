@@ -1,4 +1,4 @@
-1 .SPACE TOURISM WEBSITE--(React)  -  https://remmji.github.io/
+1 .SPACE TOURISM WEBSITE--(React)  - https://space-tourism-app-five.vercel.app
 
 2.Intro section with dropdown navbar -  https://remmji-github-io-q3sg.vercel.app/
 
