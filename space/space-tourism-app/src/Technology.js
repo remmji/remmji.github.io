@@ -13,6 +13,11 @@ function Technology() {
     const capsule = data.technology[2];
     const [machine,setMachine] = useState(vehicle);
     const [image, setImage] = useState(machine.images.portrait);
+    const [activeTab, setActiveTab] = useState(0);
+
+  useEffect(() => {
+    setActiveTab(0);
+  }, []);
 
 const handleButtonClick = (selectedMachine) => {
   setMachine(selectedMachine);
@@ -50,20 +55,20 @@ const handleButtonClick = (selectedMachine) => {
         <main className="technology-grid">
             <div className="technology-text-container">
                 <div className="btns-flex-container">
-                    <motion.button className="tech-btn"
-                    onClick={()=>handleButtonClick(vehicle)}
+                    <motion.button className="tech-btn" role='tab' aria-selected={activeTab === 0 ? "true" : "false"}
+                    onClick={()=>{handleButtonClick(vehicle); setActiveTab(0)}}
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0.8}}>
                         1
                     </motion.button>
-                    <motion.button className="tech-btn"
-                    onClick={()=>handleButtonClick(spaceport)}
+                    <motion.button className="tech-btn" role='tab' aria-selected={activeTab === 1 ? "true" : "false"}
+                    onClick={()=>{handleButtonClick(spaceport); setActiveTab(1)}}
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0.8}}>
                         2
                     </motion.button>
-                    <motion.button className="tech-btn"
-                    onClick={()=>handleButtonClick(capsule)}whileHover={{scale: 1.1}}
+                    <motion.button className="tech-btn" role='tab' aria-selected={activeTab === 2 ? "true" : "false"}
+                    onClick={()=>{handleButtonClick(capsule); setActiveTab(2)}} whileHover={{scale: 1.1}}
                     whileTap={{scale: 0.8}}>
                         3
                     </motion.button>
