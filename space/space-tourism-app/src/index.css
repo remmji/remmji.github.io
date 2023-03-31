@@ -191,7 +191,8 @@ nav{
 .underline>*:focus::after {
   content: "";
   display: block;
-  height: 0.2rem;
+  height: 0.1rem;
+  margin-top: 0.2rem;
   background-color: white;
   animation: underline 0.3s ease-in-out;
 }
