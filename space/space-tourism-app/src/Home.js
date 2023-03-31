@@ -50,10 +50,10 @@ function Home() {
         <div className="home-button">
           <Link to='/Destination'>
             <motion.button className='home-btn'
-            initial={{ rotateZ:0}}
-            animate={{ rotateZ:360 }}
-            transition={{ duration:5, delay:3}}
-            whileHover={{scale:1.1}}
+            // initial={{ rotateZ:0}}
+            // animate={{ rotateZ:360 }}
+            // transition={{ duration:5, delay:3}}
+            whileHover={{scale:1}}
             whileTap={{ scale: 0.8 }}
             >EXPLORE</motion.button>
           </Link> 
