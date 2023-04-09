@@ -17,22 +17,24 @@ font-family: 'Space Grotesk', sans-serif;
 background-color: var(--White);
 }
 /* modal toggle */
-.invisible {
-   opacity:0;
-   z-index: -1;
-}
-.visible{
-    opacity:1;
-    z-index:1;
-}
+
+
 .modal-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top:14vw;
-    margin-left:803px;
+    margin-left:50%;
     position:absolute;
+}
+.invisible {
+    opacity: 0;
+    z-index: -1;
+}
+.visible {
+    opacity: 1;
+    z-index: 1;
 }
 .heading{
     margin-top:25px;
@@ -200,20 +202,31 @@ span{
 }
 
 }
-@media screen and (max-width: 1376px) {
+@media screen and (max-width: 1376.999px) {
 body {
         font-family: 'Space Grotesk', sans-serif;
         background-color: var(--White);
         
     }
+    .modal-container {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     /* position: absolute; */
+     align-items: center;
+     flex-direction: column;
+     margin-top:15vh;
+    }
     .invisible {
         opacity: 0;
         z-index: -1;
+        display:none;
         }
     
     .visible {
         opacity: 1;
         z-index: 1;
+        display:flex;
         }
     #imgMain{
         width:100%;
@@ -286,17 +299,7 @@ body {
         left: 13.5rem;
         font-size: 10px;
     }
-    .modal-container{
-        display:flex;
-        align-content: center;
-        justify-content: center;
-        position: absolute;
-        align-items: center;
-        flex-direction: column;
-        top:20rem;
-        gap: 1rem;
-        
-    }
+
 
     .confirmation{
         color:var(--Dark-grayish-violet)
@@ -307,6 +310,10 @@ body {
         justify-content: center;
         flex-direction: column;
         margin-top:3rem;
+    }
+    form{
+        display:grid;
+        place-items:center;
     }
     label{
         display: inline-block;
@@ -363,7 +370,7 @@ body {
     }
     button {
         margin-top: 2rem;
-        margin-left:1.2rem;
+        /* margin-left:1.2rem; */
         font-size: 18px;
         padding: 10px;
         color: var(--Light-grayish-violet);
